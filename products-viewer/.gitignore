@@ -1,6 +1,5 @@
 # Dependencies
 node_modules/
-*/node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -60,8 +59,3 @@ Thumbs.db
 *.swp
 *.swo
 *~
-
-# Build outputs
-dist/
-build/
-node_modules
