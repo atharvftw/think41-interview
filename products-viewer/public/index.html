@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛍️ Products Catalog</h1>
+            <p>Browse our product collection imported from CSV</p>
+        </header>
+
+        <div class="filters">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search products, brands, or categories...">
+                <button id="searchBtn">Search</button>
+            </div>
+            
+            <div class="filter-controls">
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                </select>
+                <select id="departmentFilter">
+                    <option value="">All Departments</option>
+                </select>
+                <button id="clearFilters">Clear Filters</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <span id="totalProducts">Total Products: 0</span>
+            <span id="currentPage">Page 1</span>
+        </div>
+
+        <div id="loading" class="loading">Loading products...</div>
+        
+        <div id="productsContainer" class="products-grid"></div>
+
+        <div class="pagination">
+            <button id="prevBtn" disabled>Previous</button>
+            <span id="pageInfo">Page 1 of 1</span>
+            <button id="nextBtn" disabled>Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
